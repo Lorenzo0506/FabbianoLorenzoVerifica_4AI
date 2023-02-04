@@ -6,17 +6,21 @@
 
 	public class FabbianoLorenzoClass {
 		
-		public int cognomeMet(int s,int f) {
+		
+		public static int FabbianoMet(int s,int f) {
 			int r=0;
 			for(int i=0;i<f;i++) {
-				r=r+r;
+				r=r+r;//doveva essere r*r
 			}
 			return r;
 		}
 
 		public static void main(String[] args) {
 			
-	       new FabbianoLorenzoClass();
+	       FabbianoLorenzoClass main = new FabbianoLorenzoClass();
+	       System.out.println("il risultato è "+ FabbianoMet(8,10));
+	       System.out.println("il risultato è "+ FabbianoMet(1,5));
+	       System.out.println("il risultato è "+ FabbianoMet(6,8));
 		}
 
 	}
